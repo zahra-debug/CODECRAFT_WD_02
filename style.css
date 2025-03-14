@@ -54,13 +54,13 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-/* Apply styles correctly to all buttons */
+
 .actions button {
     padding: 10px 20px;
     border-radius: 5px;
     color: #141313;
     border: none;
-    background-color: #ddd; /* Optional for visibility */
+    background-color: #ddd;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
@@ -73,4 +73,42 @@ button:hover{
     color: #ddd;
     border: 3px solid #ddd;
     padding: 7px 17px;
+}
+@media (max-width: 768px) {
+    #container {
+        width: 90%;
+        min-width: 320px;
+        padding: 15px;
+    }
+
+    #time-display {
+        font-size: 2.5rem;
+        padding: 20px 0;
+    }
+
+    .actions {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 10px;
+    }
+
+    .actions button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #time-display {
+        font-size: 2rem;
+    }
+
+    .actions {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    }
+
+    .actions button {
+        font-size: 12px;
+        padding: 8px;
+    }
 }
