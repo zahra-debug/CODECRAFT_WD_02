@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: lightgrey;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    min-width:500px;
+    background-color: #27373b;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4)0px 2px 4px,
+    rgba(0, 0, 0, 0.4)0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.4)0px -3px 0px inset;
+}
+#time-display{
+    padding: 40px 0;
+    background-color: gray;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.17)0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15)0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1)0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06)0px 2px 1px,
+    rgba(0, 0, 0, 0.09)0px 4px 2px ,
+    rgba(0, 0, 0, 0.09)0px 8px 4px, rgba(0, 0, 0, 0.09)0px 16px 8px,
+    rgba(0, 0, 0, 0.09)0px 32px 16px;
+}
+#laps{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.actions {
+    width: 85%;
+    margin: 60px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Apply styles correctly to all buttons */
+.actions button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #141313;
+    border: none;
+    background-color: #ddd; /* Optional for visibility */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4)0px 2px 4px,
+    rgba(0, 0, 0, 0.4)0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.4)0px -3px 0px inset;
+}
+button:hover{
+    background-color: #141313;
+    color: #ddd;
+    border: 3px solid #ddd;
+    padding: 7px 17px;
+}
